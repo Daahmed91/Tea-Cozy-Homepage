@@ -1,0 +1,164 @@
+* {
+    color: seashell;
+    opacity: 0.9;
+    font-family: Helvetica;
+}
+html {
+    background-color: #000;
+   
+
+}
+/*Nav bar*/
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;  
+    
+}
+.container {
+    
+}
+.logo {
+    height: 3.125rem;
+    margin:9.5px 10px;
+    display: flex;
+ 
+}
+ul {
+    text-decoration: underline;
+    color: seashell;
+    list-style-type: none;
+    display: inline-flex;
+    font-size: 1.375rem;
+}
+ul li { 
+    margin: 10px;
+}
+ul li a:visited{
+    color: seashell;
+}
+/*Hero Section*/
+.hero-section {
+    background-image: url('Images/img-mission-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 43.75rem;
+    min-width: 75rem;
+    display:flex;
+}
+.hero-text {
+    background-color: black;
+    min-width: 100%;
+    margin: auto;
+    text-align: center;    
+}
+/*End of Hero Section*/
+
+/*Tea section*/
+.tea-title {
+    display: flex;
+}
+
+.title-text {
+    margin: auto;
+    width: 1000px;
+    text-align: center;
+}
+
+.images{ 
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+width: 1000px;
+margin: auto;
+
+}
+
+.box{
+    margin: auto;
+    max-width: 333.33px;
+    text-align: center;
+    font-weight: 900;
+}
+.box img{
+    width: 300px; 
+    height: 200px; 
+}
+/*End of Tea section*/
+
+/*Locations section*/
+.location-container {
+    background-image: url('Images/img-locations-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 31.25rem;
+    width: auto;
+    padding-top: 70px;
+    display:block;
+    
+    
+    
+}
+.location-title {
+    margin: 0px auto;
+    text-align: center;
+    background-color: transparent;  
+    font-weight: 900;
+    
+}
+
+.location {
+    display: flex;
+    flex-wrap: wrap;
+}
+.location-box {
+    background-color: #000;
+    opacity: 1;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+}
+h3 {
+    font-weight: 900;
+}
+
+ 
+/*End of Locations section*/
+/* Footer section*/
+
+.footer{
+    display: flex;
+}
+.footer div{
+margin: auto;
+height: 200px;
+text-align: center;
+
+}
+
+.footer div a{
+    text-decoration: none;
+    color: seashell;
+}
+#copyright {
+    padding-left: 20px;
+}
+
+@media only screen and (min-width:1200px) {
+    .hero-section{
+        background-size: cover;
+    }
+    .images {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .location-container {
+        background-size: cover;
+    }
+}
